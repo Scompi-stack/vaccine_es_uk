@@ -13,14 +13,28 @@
       margin: 0;
       padding: 2rem;
     }
-    h1 {
-      color: #004080;
+    header {
+      background-color: #004080;
+      color: white;
+      padding: 2rem;
       text-align: center;
+    }
+    h1 {
+      margin: 0;
+    }
+    section {
+      max-width: 800px;
+      margin: 2rem auto;
+      background-color: #f9f9fc;
+      padding: 1.5rem 2rem;
+      border-left: 5px solid #cc3366;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
     }
     table {
       width: 100%;
       border-collapse: collapse;
-      margin: 2rem 0;
+      margin-top: 1rem;
     }
     th, td {
       border: 1px solid #ccc;
@@ -37,28 +51,34 @@
   </style>
 </head>
 <body>
-  <h1>Spain - Vaccination Schedule for Children and Adolescents (3–18 years)</h1>
-  <table>
-    <thead>
-      <tr>
-        <th>Age</th>
-        <th>Vaccines</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>3 years and 4 months</td>
-        <td>2nd dose MMR, DTaP/IPV (typically administered at 6 years)</td>
-      </tr>
-      <tr>
-        <td>12–13 years</td>
-        <td>HPV vaccine</td>
-      </tr>
-      <tr>
-        <td>14 years</td>
-        <td>MenACWY (between 12–14 years), Td booster (14 years)</td>
-      </tr>
-    </tbody>
-  </table>
+  <header>
+    <h1>Spain - Vaccination Schedule (3–18 years)</h1>
+  </header>
+
+  <section>
+    <h2>Vaccines by Age Group</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Age</th>
+          <th>Vaccines</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>3 years and 4 months</td>
+          <td>2nd dose MMR, DTaP/IPV (typically administered at 6 years)</td>
+        </tr>
+        <tr>
+          <td>12–13 years</td>
+          <td>HPV vaccine</td>
+        </tr>
+        <tr>
+          <td>14 years</td>
+          <td>MenACWY (between 12–14 years), Td booster (14 years)</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
 </body>
 </html>

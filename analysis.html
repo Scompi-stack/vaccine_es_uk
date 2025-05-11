@@ -10,49 +10,109 @@
       font-family: 'Roboto', sans-serif;
       background-color: #ffffff;
       color: #002855;
-      padding: 2rem;
       margin: 0;
+      padding: 0;
       line-height: 1.6;
     }
-    h1, h2 {
-      color: #004080;
+    header {
+      background-color: #004080;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    h1 {
+      margin: 0;
     }
     section {
-      margin-bottom: 2.5rem;
+      max-width: 900px;
+      margin: 2rem auto;
       border-left: 5px solid #cc3366;
-      padding-left: 1rem;
-      background-color: #f8f8f8;
-      padding: 1rem;
-      border-radius: 6px;
+      padding: 1.5rem 2rem;
+      background-color: #f9f9fc;
+      border-radius: 8px;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+    }
+    h2 {
+      color: #cc3366;
+      margin-top: 0;
+    }
+    ul {
+      padding-left: 1.2rem;
+    }
+    li {
+      margin-bottom: 0.5rem;
+    }
+    .highlight {
+      background-color: #e8f0fe;
+      padding: 0.5rem 1rem;
+      border-left: 4px solid #004080;
+      margin: 1rem 0;
+      border-radius: 4px;
     }
   </style>
 </head>
 <body>
-  <h1>Comparative Analysis: Spain vs United Kingdom Vaccination Schedules</h1>
+  <header>
+    <h1>Comparative Analysis: Spain vs United Kingdom Vaccination Schedules</h1>
+  </header>
 
   <section>
     <h2>Infants (0–3 years)</h2>
-    <p>Both countries administer hexavalent vaccines covering DTaP/IPV/Hib/HepB at 2 and 4 months. Spain and the UK provide MenB and rotavirus vaccines early in life, though Spain's regional differences limited MenB coverage until recently. Spain administers PCV at 6 months, while the UK includes it at 4 months. Booster doses (Hib-HepB in Spain, Hib/MenC in the UK) and MenB boosters are given at 11–12 months in both countries. Measles outbreaks have led both nations to bring forward the MMR vaccine: the UK to 18 months, Spain to 2 years.</p>
+    <div class="highlight">
+      <strong>Common:</strong> Both use hexavalent vaccines, MenB and rotavirus early in life.
+    </div>
+    <ul>
+      <li><strong>Spain:</strong> PCV given at 6 months, Hib-HepB booster at 11–12 months.</li>
+      <li><strong>UK:</strong> PCV at 4 months, Hib/MenC and MenB boosters at 11–12 months.</li>
+      <li>MMR timing advanced due to measles outbreaks: UK to 18 months, Spain to 2 years.</li>
+    </ul>
   </section>
 
   <section>
     <h2>Children and Adolescents (3–18 years)</h2>
-    <p>Spain administers the 2nd dose of MMR and DTaP/IPV around age 6. Both countries vaccinate against HPV at 12–13 years for both sexes. Spain includes MenACWY (12–14 years) and Td (14 years), while the UK centralizes these at 14 years. Spain offers chickenpox (VZV) vaccine routinely at 15 months and again at 3–4 years. The UK does not include VZV routinely, preferring natural immunity. Spain also recommends flu vaccination from 6 months to 18 years, prioritizing 6–59 months. The UK focuses more on operational efficiency via school-based delivery.</p>
+    <div class="highlight">
+      <strong>Shared:</strong> MMR (2nd dose), DTaP/IPV boosters, HPV for boys and girls.
+    </div>
+    <ul>
+      <li><strong>Spain:</strong> MenACWY between 12–14 years, Td at 14 years, routine chickenpox vaccine.</li>
+      <li><strong>UK:</strong> Centralized MenACWY and Td/IPV at 14 years; VZV not included.</li>
+      <li>Spain recommends flu vaccine up to 18 years (especially 6–59 months).</li>
+      <li>UK focuses on delivery via school campaigns.</li>
+    </ul>
   </section>
 
   <section>
     <h2>Adults (19+ years)</h2>
-    <p>Both countries offer annual flu and pneumococcal vaccination to older adults. Spain's herpes zoster (Shingrix) vaccine at 65 depends on regional implementation, while the UK has used it routinely for years. RSV vaccination is now routine in the UK for people aged 75+, while Spain has not yet implemented this. Spain relies more on regional decisions, causing inequality in access, whereas the UK’s central model ensures uniform delivery.</p>
+    <ul>
+      <li>Both countries provide annual flu and pneumococcal vaccines.</li>
+      <li><strong>Spain:</strong> Shingrix at 65 depends on regional approval; RSV not yet routine.</li>
+      <li><strong>UK:</strong> Shingrix routine from 65; RSV vaccine from 75 years included.</li>
+    </ul>
   </section>
 
   <section>
     <h2>Pregnant Women</h2>
-    <p>Both countries recommend dTpa and flu vaccines during pregnancy starting at week 16. The UK runs national awareness campaigns, especially after increases in infant deaths from whooping cough. Spain relies more on local healthcare professionals. COVID-19 vaccines are promoted in both, with the UK including pregnant women systematically and Spain following local availability and regional strategy.</p>
+    <ul>
+      <li>Both recommend dTpa and flu vaccine from week 16.</li>
+      <li><strong>UK:</strong> Reinforced campaigns post-whooping cough deaths.</li>
+      <li><strong>Spain:</strong> Relies on local midwives and healthcare teams.</li>
+      <li>Both promote COVID-19 vaccination during pregnancy.</li>
+    </ul>
   </section>
 
   <section>
     <h2>General Comparison</h2>
-    <p>Spain operates under a decentralized system where each autonomous community can adapt the national vaccination calendar. This has resulted in uneven implementation of some vaccines (e.g., MenB, rotavirus, zoster). The UK uses a centralized model through the JCVI, enabling rapid, uniform nationwide implementation. Spain tends to favor broader, universal immunization (e.g., varicella, MenB in infants), while the UK focuses on epidemiological efficiency and cost-effectiveness (e.g., limited VZV, delayed MMR). Spain prioritizes early coverage for diseases with reemergence, while the UK addresses structural coverage issues with earlier boosters and campaigns.</p>
+    <div class="highlight">
+      <strong>Spain:</strong> Decentralized model → flexible but unequal implementation.
+    </div>
+    <div class="highlight">
+      <strong>UK:</strong> Centralized model (JCVI) → uniform, efficient national rollouts.
+    </div>
+    <ul>
+      <li>Spain includes broader immunizations (e.g., VZV, MenB in infants).</li>
+      <li>UK emphasizes cost-effectiveness and strategic timing.</li>
+      <li>Spain anticipates outbreaks; UK focuses on delivery logistics and booster timing.</li>
+    </ul>
   </section>
 </body>
 </html>
