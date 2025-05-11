@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vaccination Schedule: Spain vs United Kingdom</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #ffffff;
+      color: #002855;
+      margin: 0;
+      padding: 2rem;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      color: #004080;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      color: #333366;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      margin: 2rem 0;
+    }
+
+    .gallery img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      width: 45%;
+    }
+
+    .button-container {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    button {
+      padding: 1rem 2rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      background-color: #004080;
+      color: white;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.2s ease-in-out;
+    }
+
+    button:hover {
+      background-color: #cc3366;
+    }
+
+    .age-buttons {
+      margin-top: 1rem;
+      display: none;
+    }
+
+    .age-buttons button {
+      background-color: #cc3366;
+    }
+
+    .age-buttons button:hover {
+      background-color: #b32d59;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Vaccination Schedule: Spain vs United Kingdom</h1>
+    <p>Compare national immunisation plans by country and age</p>
+  </header>
+
+  <div class="gallery">
+    <img src="images/calendario_españa.jpeg" alt="Spain Vaccination Schedule" />
+    <img src="images/calendario_uk.jpeg" alt="UK Vaccination Schedule" />
+  </div>
+
+  <div class="button-container">
+    <div>
+      <button onclick="showAge('es')">I am Spanish</button>
+      <div id="age-es" class="age-buttons">
+        <button onclick="location.href='vaccines_es_0_3.html'">Baby (0–3 years)</button>
+        <button onclick="location.href='vaccines_es_3_18.html'">Child (3–18 years)</button>
+        <button onclick="location.href='vaccines_es_19.html'">Adult (19+ years)</button>
+      </div>
+    </div>
+
+    <div>
+      <button onclick="showAge('uk')">I am British</button>
+      <div id="age-uk" class="age-buttons">
+        <button onclick="location.href='vaccines_uk_0_3.html'">Baby (0–3 years)</button>
+        <button onclick="location.href='vaccines_uk_3_18.html'">Child (3–18 years)</button>
+        <button onclick="location.href='vaccines_uk_19.html'">Adult (19+ years)</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function showAge(nationality) {
+      document.getElementById("age-es").style.display = nationality === "es" ? "block" : "none";
+      document.getElementById("age-uk").style.display = nationality === "uk" ? "block" : "none";
+    }
+  </script>
+</body>
+</html>
